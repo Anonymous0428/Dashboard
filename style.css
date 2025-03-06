@@ -1,0 +1,313 @@
+*{
+    box-sizing: border-box;
+    z-index: 5;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat-Regular", serif;
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+body{
+    overflow-x: hidden;
+}
+ul li{
+    list-style: none;
+}
+a, a:visited, a:active{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+    top: 0;
+    padding: 10px 0px;
+    display: block;
+    align-content: center;
+    background: linear-gradient(135deg,rgb(57, 46, 55) 0%,rgb(74, 61, 61) 20%,rgb(39, 31, 48) 50%,rgb(44, 34, 53) 75%,rgb(74, 61, 61) 90%, rgb(57, 46, 55) 100%);
+}
+.header__container{
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header__container__contents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header__logo{
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.header__logo img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.menu__list{
+    display: flex;
+    gap: 15px;
+}
+.search__form__item{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.searchbar{
+    width: 250px;
+    padding: 10px 15px;
+    outline: none;
+}
+.searchbar__button{
+    display: block;
+    width: 35px;
+}
+.header__right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.connect__list{
+    display: flex;
+    gap: 10px;
+}
+.connect__list__item a{
+    background-color: #664760 ;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    color: #d8cdcd;
+}
+.connect__list__item a:hover{
+    background-color: #af7ea5;
+    color: #fff;
+}
+.header__shoppingCard{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 10px;
+    background-color: #5e3957;
+}
+.shoppingCard__image img{
+    display: block;
+    width: 40px;
+}
+.shoppingCard__txt span{
+    font-size: 18px;
+    color: #d8cdcd;
+}
+
+
+
+.main{
+    min-height: 100vh;
+    background-image: url(images/image_fx_\ \(7\).jpg);
+}
+.classnone{
+    padding-top: 32px;
+}
+.connect__form{
+    display: block;
+    justify-items: center;
+    position: relative;
+    background-color: rgb(231, 214, 191);
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 118px;
+}
+.utilisateur__icon{
+    position: absolute;
+    top: 74px;
+    left: 100px;
+    width: 500px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+}
+.utilisateur__image{
+    position: relative;
+    width: 100px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    margin-top: 15px;
+    width: 400px;
+}
+.email__image{
+    display: block;
+    justify-items: center;
+    align-content: center;
+    position: absolute;
+    z-index: 6;
+    border-radius: 5px;
+    top: 140px;
+    width: 50px;
+    height: 38px;
+    background-color: #664760;
+}
+.email__image img{
+    display: block;
+    width: 30px;
+}
+.form__item1 .email__input{
+    width: 90%;
+    position: relative;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid #00000041;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+}
+.form__item1 .email__input:hover{
+    border: 2px solid #000000;
+    background-color: antiquewhite;
+}
+.password__image{
+    display: block;
+    justify-items: center;
+    align-content: center;
+    position: absolute;
+    z-index: 6;
+    border-radius: 5px;
+    width: 50px;
+    height: 38px;
+    background-color: #664760;
+    top: 209px;
+}
+.password__image img{
+    display: block;
+    width: 30px;
+}
+.form__item2 .password__input{
+    width: 90%;
+    position: relative;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid #00000041;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+}
+.form__item2 .password__input:hover{
+    border: 2px solid #000000;
+    background-color: antiquewhite;
+}
+.connect__form__button{
+    width: 90%;
+    padding: 10px 15px;
+    border: 1px solid #00000041;
+    border-radius: 10px;
+    background-color: #5e3957;
+    cursor: pointer;
+}
+.connect__form__button:hover{
+    background-color: #af7ea5;
+    font-weight: 1000;
+}
+.create__compt{
+    width: 400px;
+    display: flex;
+    gap: 10px;
+    margin-left: 5px;
+    align-items: center;
+}
+.create__compt__question{
+    width: 63%;
+}
+.create__compt a{
+    width: 37%;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 7px;
+    background-color: #5e3957;
+}
+.create__compt a:hover{
+    font-size: 14px;
+    background-color: #af7ea5;
+    font-weight: 1000;
+}
+.error__text{
+    display: block;
+    align-content: center;
+    padding:10px 35px;
+    width: 100%;
+    background-color: rgba(241, 155, 140, 0.76);
+}
+.error__text p{
+    line-height: 25px;
+    color: red;
+}
+.error__text a{
+    width: auto;
+    padding: 0;
+    border-radius: none;
+    border: none;
+    background-color: unset;
+    text-decoration: underline;
+}
+.error__text a:hover{
+    background-color: unset;
+}
+.error__text span{
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 1045px){
+}
+
+
+
+
+
+
+
+
+.footer{
+    height: 100px;
+    background: linear-gradient(135deg,rgb(57, 46, 55) 0%,rgb(74, 61, 61) 20%,rgb(39, 31, 48) 50%,rgb(44, 34, 53) 75%,rgb(74, 61, 61) 90%, rgb(57, 46, 55) 100%);
+}
